@@ -1,7 +1,7 @@
 from lxml import html
 
 # อ่านไฟล์ MHTML
-with open('./pdf/Gehenna Gate - Test _ Facebook.mhtml', 'rb') as f:
+with open('Gehenna Gate - Test _ Facebook.mhtml', 'rb') as f:
     mhtml_content = f.read()
 
 # แปลง MHTML เป็น HTML
