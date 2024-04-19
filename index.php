@@ -1,6 +1,8 @@
 <?php
+
 // รวมไฟล์ของ Simple HTML DOM Parser
 require 'simple_html_dom.php';
+require __DIR__ . '/vendor/autoload.php';
 
 // ใช้ GuzzleHTTP เพื่อส่งคำขอ HTTP
 use GuzzleHttp\Client;
