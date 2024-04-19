@@ -1,5 +1,4 @@
 <?php
-
 // รวมไฟล์ของ Simple HTML DOM Parser
 require 'simple_html_dom.php';
 require __DIR__ . '/vendor/autoload.php';
@@ -8,7 +7,7 @@ require __DIR__ . '/vendor/autoload.php';
 use GuzzleHttp\Client;
 
 // กำหนด URL ของหน้าเว็บที่ต้องการดึงข้อมูล
-$url = 'https://web.facebook.com/permalink.php?story_fbid=pfbid02NwxzZXi3HcGJ2K32LAQ5rWKYk9HH18uSMKkdgng3KUbNBkaGkYqQaMFfVYStdBAul&id=61558499640631';
+$url = 'https://www.facebook.com/permalink.php?story_fbid=pfbid0JvNH5iWUciSDkHJxQpiqkvWsMqLtGTCvbVnm8qXmD7tuxXrsqeHb1MAUSmx5s2uzl&id=61558499640631';
 
 // สร้างอ็อบเจ็กต์ของ GuzzleHTTP Client
 $client = new Client();
@@ -25,11 +24,15 @@ if ($response->getStatusCode() == 200) {
     $html = str_get_html($html_content);
     
     // ค้นหาและดึงข้อมูลตามต้องการ
-    foreach($html->find('div[class=xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs]') as $element) {
+    foreach($html->find('div[class=x169t7cy x19f6ikt]') as $element) {
         // แสดงเนื้อหาที่ดึงได้
-        echo $element->plaintext . "<br>";
+
+        //echo "Test";
+        echo "Connect Successfully!"."<br>";
+        echo "Content Comment=>". $element->plaintext . "<br>";
     }
 } else {
     echo 'Failed to retrieve page. Status code: ' . $response->getStatusCode();
+    echo "Test Error";
 }
 ?>
