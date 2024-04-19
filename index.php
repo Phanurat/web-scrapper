@@ -7,7 +7,7 @@ require __DIR__ . '/vendor/autoload.php';
 use GuzzleHttp\Client;
 
 // กำหนด URL ของหน้าเว็บที่ต้องการดึงข้อมูล
-$url = 'https://www.facebook.com/permalink.php?story_fbid=pfbid0JvNH5iWUciSDkHJxQpiqkvWsMqLtGTCvbVnm8qXmD7tuxXrsqeHb1MAUSmx5s2uzl&id=61558499640631';
+$url = 'C:/xampp/htdocs/web-scrapper/pdf/Gehenna%20Gate%20-%20Test%20_%20Facebook.mhtml';
 
 // สร้างอ็อบเจ็กต์ของ GuzzleHTTP Client
 $client = new Client();
@@ -24,7 +24,7 @@ if ($response->getStatusCode() == 200) {
     $html = str_get_html($html_content);
     
     // ค้นหาและดึงข้อมูลตามต้องการ
-    foreach($html->find('div[class=x169t7cy x19f6ikt]') as $element) {
+    foreach($html->find('div[class=x1lliihq xjkvuk6 x1iorvi4]') as $element) {
         // แสดงเนื้อหาที่ดึงได้
 
         //echo "Test";

@@ -11,5 +11,11 @@
             <span>Test Test</span>
         </div>
     </div>
+
+    <h1 class="h1class">H1 Class</h1>
+
+    <div class="h1class">
+        <h1>H1 Class</h1>
+    </div>
 </body>
 </html>
