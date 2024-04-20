@@ -14,8 +14,8 @@ def download_complete_webpage(url, filename):
         file.write(str(soup))
 
 # ระบุ URL และชื่อไฟล์ที่ต้องการบันทึก
-url = 'https://www.facebook.com/permalink.php?story_fbid=pfbid0JvNH5iWUciSDkHJxQpiqkvWsMqLtGTCvbVnm8qXmD7tuxXrsqeHb1MAUSmx5s2uzl&id=61558499640631'
-filename = 'complete_webpage.html'
+url = 'https://www.facebook.com/aseanfootball/posts/pfbid033GHRZKjECRCBaaqNbpDij8wXkXZ4JKPMF7VrGq6WDDEKN37nTnk8eu4UP8t5M4kUl'
+filename = 'football-save.html'
 
 # เรียกใช้ฟังก์ชันเพื่อดาวน์โหลดและบันทึกเว็บไซต์
 download_complete_webpage(url, filename)
