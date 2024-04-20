@@ -7,7 +7,7 @@ require __DIR__ . '/vendor/autoload.php';
 use GuzzleHttp\Client;
 
 // กำหนด URL ของหน้าเว็บที่ต้องการดึงข้อมูล
-$url = 'C:/xampp/htdocs/web-scrapper/pdf/Gehenna%20Gate%20-%20Test%20_%20Facebook.mhtml';
+$url = 'http://localhost/web-scrapper/test.php';
 
 // สร้างอ็อบเจ็กต์ของ GuzzleHTTP Client
 $client = new Client();
