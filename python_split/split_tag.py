@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 # เปิดไฟล์ HTML
-with open('example.html', 'r', encoding='utf-8') as file:
+with open('scrapper.html', 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 # สร้างอ็อบเจ็กต์ BeautifulSoup
